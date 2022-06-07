@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,33 @@
     <link rel="stylesheet" href="./assets/style.css">
     <title>Not Always Sunny </title>
 </head>
+
 <body>
     <header>
         <h1> Weather Dashboard</h1>
     </header>
-<div class="seachBar">
-    <h3> Search for a City</h3>
-   <input type="text" placeholder="Search..">"
 
- </div>
+    <div class="seachBar">
+        <h3> Search for a City</h3>
+        <input id="city" type="text" placeholder="Search.." />
+        <button type="button" class="searchButton">Search</button>
+    </div>
 
-    
+    <div class="current-container">
+        <h1 class="cityName"></h1>
+        <p class="temp"></p>
+        <p class="humidity"></p>
+        <p class="wind"></p>
+        <p class="uvi"></p>
+    </div>
+
+    <div class="five-day-container">
+        
+    </div>
+
+    <script src="./assets/weather.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 </body>
+
 </html>
