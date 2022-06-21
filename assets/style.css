@@ -1,28 +1,43 @@
-.current-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 80%;
-  max-width: 800px;
+.green {
+  background-color: green;
 }
- .jumbotron {
- text-align: center;
- } 
- /* .card-columns {
-  column-count: 3;
-  } */
 
-.five-day-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+.yellow {
+  background-color: orange;
 }
-/* 
-.card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 80%;
-  max-width: 800px;
-} */
+
+.red {
+  background-color: red;
+}
+
+.header-container {
+  padding: 15px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+.search-bar {
+  padding: 30px;
+  ;
+}
+
+.history button {
+  display: list-item;
+  background-color: #e7e7e7;
+  color: black;
+  border: 1px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 700px;
+}
+
+.current-container {
+  display: list-item;
+  flex: auto;
+  float: right;
+} 
+
