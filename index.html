@@ -18,32 +18,32 @@
             <h1>Weather Dashboard</h1>
         </div>
     </header>
-
-    <div class="search-bar">
-        <!-- <div class="card-body"> -->
-            <h2 class="card-title">Search for a City</h2>
+    <section class="top-half">
+        <div class="search-container">
+            <h2 class=>Search for a City</h2>
             <form id="user-form">
                 <input name="city-search" id="city-search" type="text" autofocus="true" class="form-input" />
                 <button type="submit" class="btn btn-secondary">Search</button>
             </form>
-            <br />
-        <!-- </div> -->
-    </div>
-    <div class="search-history">
-        <!-- <div class="card-body"> -->
+        </div>
+        <div class="current-container">
+            <h2 class="cityName text-justify"></h2>
+            <section class="icon-container"></section>
+            <p class="date"></p>
+            <p class="temp"></p>
+            <p class="humidity"></p>
+            <p class="wind"></p>
+            <p class="uvi"></p>
+        </div>
+    </section>
+
+
+    <div class="history-container">
+        <div class="search-history">
             <div class="history"></div>
-        <!-- </div> -->
+        </div>
     </div>
 
-    <div class="current-container">
-        <section class="icon-container"></section>
-        <h2 class="cityName"></h2>
-        <p class="date"></p>
-        <p class="temp"></p>
-        <p class="humidity"></p>
-        <p class="wind"></p>
-        <p class="uvi"></p>
-    </div>
 
     <div class="five-day-container"></div>
 

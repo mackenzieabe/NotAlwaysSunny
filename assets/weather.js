@@ -61,7 +61,7 @@ var getFiveDay = function (lat, lon) {
         card.append(fiveDayIcon)
 
         var fiveTemp = document.createElement('p')
-        fiveTemp.textContent = fiveDayData.daily[i].temp.day + ' F'
+        fiveTemp.textContent = "Temp: " + fiveDayData.daily[i].temp.day + ' F'
         card.append(fiveTemp)
 
         uvValue.textContent = "UV Index: " + fiveDayData.current.uvi
@@ -77,9 +77,13 @@ var getFiveDay = function (lat, lon) {
           uvValue.classList.remove("yellow");
           uvValue.classList.add("red");
         }
+        var fiveWind = document.createElement('p')
+        fiveWind.textContent = "Wind: " + fiveDayData.daily[i].wind_speed + " MPH"
+        card.append(fiveWind)
 
-
-
+        var fiveHumidity = document.createElement('p')
+        fiveHumidity.textContent = "Humidity: " + fiveDayData.current.humidity + " %"
+        card.append(fiveHumidity)
       }
     });
 
@@ -111,7 +115,6 @@ function getHistory() {
 
       historyBtn.addEventListener('click', function (event) {
         let clicked = event.target.textContent
-        console.log(clicked);
         getCurrentWeather(clicked)
       })
     }

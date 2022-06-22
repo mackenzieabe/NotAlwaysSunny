@@ -1,13 +1,17 @@
 .green {
   background-color: green;
+  width: 100px;
 }
 
 .yellow {
   background-color: orange;
+  width: 100px;
+
 }
 
 .red {
   background-color: red;
+  width: 100px;
 }
 
 .header-container {
@@ -23,6 +27,11 @@
   ;
 }
 
+.history-container{
+  padding: 20px;
+  width: 30%;
+  float: inline-start;
+}
 .history button {
   display: list-item;
   background-color: #e7e7e7;
@@ -39,5 +48,35 @@
   display: list-item;
   flex: auto;
   float: right;
+  width: 70%;
+  box-sizing: border-box;
+  border-style: double;
+  border-color: black;
+  position: relative;
+  bottom: 110px;
 } 
 
+.search-container{
+  padding: 20px;
+  width: 30%;
+  float: inline-start;
+  /* box-sizing: border-box;
+  border-style: double;
+  border-color: black; */
+} 
+.five-day-container{
+  /* display: list-item;
+  flex: auto;
+  float: right;
+  width: 70%;
+  box-sizing: border-box;
+  border-style: double;
+  border-color: black;
+  position: relative;
+  bottom: 100px; */
+}
+.button{ 
+  padding: 10px;
+  
+
+} 
