@@ -7,3 +7,8 @@ Not Always Sunny is a weather dashboard that allows the user to search for any c
 HTML, CSS, JavaScript 
 
 ## Link for deployed site
+https://mackenzieabe.github.io/NotAlwaysSunny/ 
+
+![Screenshot (35)](https://user-images.githubusercontent.com/102620275/175177651-809bb1aa-04dd-4f5e-a6be-bf919d30729c.png)
+![Screenshot (36)](https://user-images.githubusercontent.com/102620275/175177657-5c6d27fe-7ba2-439c-904b-5671b8d906c8.png)
+![Screenshot (37)](https://user-images.githubusercontent.com/102620275/175177661-7e9de636-9355-45e1-80a3-0feacd747863.png)
