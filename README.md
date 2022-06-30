@@ -13,4 +13,4 @@ https://mackenzieabe.github.io/NotAlwaysSunny/
 ![](../../../Pictures/Screenshots/Screenshot%20(42).png) 
 ![](../../../Pictures/Screenshots/Screenshot%20(43).png)
 ![](../../../Pictures/Screenshots/Screenshot%20(44).png)
-![](../../../Pictures/Screenshots/Screenshot%20(45).png)
+![](../../../Pictures/Screenshots/Screenshot%20(45).png) 
