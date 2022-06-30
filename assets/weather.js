@@ -12,7 +12,7 @@ var iconContainer = document.querySelector('.icon-container')
 var historyEl = document.querySelector('.history')
 
 var getCurrentWeather = function (city) {
-
+  //fetching api from openweathermap for current day weather
   fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=37c2c3166abd1655f69f9cfd6a5c6b2b&units=imperial')
     .then(res => {
       return res.json()
@@ -21,10 +21,10 @@ var getCurrentWeather = function (city) {
       iconContainer.textContent = ''
 
       cityName.textContent = data.name
-
+      //using moment.js to set the date for my current weather container.
       var time = document.querySelector('.date')
       time.textContent = moment().add(10, 'days').calendar();
-
+      //grabbing the icon from openweathermap and appending it to my current weather container.
       var icon = document.createElement('img')
       icon.setAttribute('src', 'http://openweathermap.org/img/wn/' + data.weather[0].icon + '@2x.png')
       iconContainer.append(icon)
@@ -38,7 +38,7 @@ var getCurrentWeather = function (city) {
       getFiveDay(lat, lon)
     })
 }
-
+//fetching api from openweathermap for 5 day weather
 var getFiveDay = function (lat, lon) {
   fetch('https://api.openweathermap.org/data/2.5/onecall?lat=' + lat + '&lon=' + lon + '&appid=37c2c3166abd1655f69f9cfd6a5c6b2b&units=imperial')
     .then(res => {
@@ -49,10 +49,10 @@ var getFiveDay = function (lat, lon) {
       fiveDayContainer.textContent = ''
       for (var i = 1; i < 6; i++) {
         var card = document.createElement('div')
-        card.classList.add('five-day-container')
+        card.classList.add('card')
         fiveDayContainer.append(card)
 
-        var day = document.createElement('h1')
+        var day = document.createElement('h3')
         day.textContent = moment().add(i, 'days').format('dddd');
         card.append(day)
 
@@ -66,6 +66,7 @@ var getFiveDay = function (lat, lon) {
 
         uvValue.textContent = "UV Index: " + fiveDayData.current.uvi
         currentContainer.append(uvValue)
+
         if (fiveDayData.current.uvi <= 3) {
           uvValue.classList.add("green");
         }
@@ -77,6 +78,7 @@ var getFiveDay = function (lat, lon) {
           uvValue.classList.remove("yellow");
           uvValue.classList.add("red");
         }
+
         var fiveWind = document.createElement('p')
         fiveWind.textContent = "Wind: " + fiveDayData.daily[i].wind_speed + " MPH"
         card.append(fiveWind)
@@ -88,7 +90,7 @@ var getFiveDay = function (lat, lon) {
     });
 
 }
-
+//setting searched cities to local storage so that they appear in the search history container.
 function saveHistory(value) {
   let storage = JSON.parse(localStorage.getItem('weatherHistory'))
   if (storage === null) {

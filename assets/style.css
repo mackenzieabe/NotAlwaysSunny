@@ -1,82 +1,115 @@
 .green {
   background-color: green;
   width: 100px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
 }
 
 .yellow {
   background-color: orange;
   width: 100px;
-
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
 }
 
 .red {
   background-color: red;
   width: 100px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
 }
 
 .header-container {
   padding: 15px;
   text-align: center;
-  background: #1abc9c;
+  background: linear-gradient(90deg, rgba(9, 8, 31, 1) 0%, rgba(56, 56, 59, 1) 35%, rgba(56, 122, 135, 1) 100%);
   color: white;
   font-size: 30px;
+  font-family: "Tajawal";
 }
 
-.search-bar {
-  padding: 30px;
-  ;
+.top-half {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Tajawal";
 }
 
-.history-container{
-  padding: 20px;
-  width: 30%;
-  float: inline-start;
-}
-.history button {
-  display: list-item;
-  background-color: #e7e7e7;
-  color: black;
-  border: 1px;
-  padding: 15px 32px;
+.search-container {
+  width: 50%;
   text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin-right: 700px;
+}
+
+.history-container {
+  width: 80%;
+  text-align: center;
+  padding: 20px;
+  margin: 0px;
 }
 
 .current-container {
-  display: list-item;
-  flex: auto;
-  float: right;
   width: 70%;
-  box-sizing: border-box;
-  border-style: double;
-  border-color: black;
-  position: relative;
-  bottom: 110px;
-} 
-
-.search-container{
-  padding: 20px;
-  width: 30%;
-  float: inline-start;
-  /* box-sizing: border-box;
-  border-style: double;
-  border-color: black; */
-} 
-.five-day-container{
-  /* display: list-item;
-  flex: auto;
-  float: right;
-  width: 70%;
-  box-sizing: border-box;
-  border-style: double;
-  border-color: black;
-  position: relative;
-  bottom: 100px; */
+  text-align: center;
 }
-.button{ 
-  padding: 10px;
-  
 
-} 
+.current-container h1 {
+  font-size: 40px;
+}
+
+.current-container p {
+  font-weight: bold;
+}
+
+.todaysweather {
+  background-color: #8b8d8f;
+  border: none;
+  border-radius: 5px;
+}
+
+.history {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.history button {
+  background-color: #8b8d8f;
+  color: black;
+  width: 150px;
+  margin: 3px auto;
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.five-day-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 100px 200px 250px;
+  font-family: "Tajawal";
+  padding: 50px;
+}
+
+.btn-secondary {
+  background-color: #82aadb;
+  color: black;
+  width: 150px;
+  margin: 3px auto;
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.card {
+  background-color: gray;
+  border: none;
+  border-radius: 5px;
+}
+
+.button {
+  padding: 10px;
+}
