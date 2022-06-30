@@ -9,8 +9,8 @@ HTML, CSS, JavaScript
 ## Link for deployed site
 https://mackenzieabe.github.io/NotAlwaysSunny/ 
 
-![](../../../Pictures/Screenshots/Screenshot%20(41).png)
-![](../../../Pictures/Screenshots/Screenshot%20(42).png) 
-![](../../../Pictures/Screenshots/Screenshot%20(43).png)
-![](../../../Pictures/Screenshots/Screenshot%20(44).png)
-![](../../../Pictures/Screenshots/Screenshot%20(45).png) 
+![Screenshot (41)](https://user-images.githubusercontent.com/102620275/176677409-adaf611f-b30b-45ea-a859-55e0d24ab9cb.png)
+![Screenshot (42)](https://user-images.githubusercontent.com/102620275/176677428-a0301129-0209-4c4d-917a-637517aca8c9.png)
+![Screenshot (43)](https://user-images.githubusercontent.com/102620275/176677434-b8e31a20-407f-4497-8b64-beb521622ca6.png)
+![Screenshot (44)](https://user-images.githubusercontent.com/102620275/176677442-c4e747ba-eeb2-4de9-852e-c81522d8611a.png)
+![Screenshot (45)](https://user-images.githubusercontent.com/102620275/176677448-06d77ebe-449b-4691-a942-abe67df5fbfa.png)
