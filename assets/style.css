@@ -108,8 +108,12 @@
   background-color: gray;
   border: none;
   border-radius: 5px;
+  font-weight: bold;
+  font-size: 90%;
 }
-
+.card img{
+width: 50%;
+}
 .button {
   padding: 10px;
 }
