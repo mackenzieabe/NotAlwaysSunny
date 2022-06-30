@@ -44,6 +44,7 @@ var getFiveDay = function (lat, lon) {
     .then(res => {
       return res.json()
     })
+    //creating cards for each day in the fivedaycontainer
     .then(fiveDayData => {
       console.log(fiveDayData);
       fiveDayContainer.textContent = ''
